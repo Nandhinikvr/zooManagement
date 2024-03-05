@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using ZooManagement.Enums;
 
-namespace ZooManagement.Models;
+namespace ZooManagement.Models.Data;
 
 public class Animal
 {
@@ -16,7 +16,7 @@ public class Animal
 
     public required Sex Sex { get; set; }
 
-    public DateOnly? DateOfBirth { get; set; }
+    public DateTime? DateOfBirth { get; set; }
 
-    public required DateOnly DateOfAcquisition { get; set; }
+    public required DateTime DateOfAcquisition { get; set; }
 }
